@@ -275,6 +275,21 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
   })
 
+  .state('app.properti', {
+      url: '/properti',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/properti.html',
+          controller: 'CartCtrl'
+        }
+      },
+      resolve:{
+        cart : function(CartService) {
+          return CartService.getById(window.localStorage['marketcloud.cart_id'])
+        }
+      }
+  })
+
   .state('app.Peminjaman', {
       url: '/peminjaman',
       views: {
@@ -382,4 +397,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
+
+
+
 });

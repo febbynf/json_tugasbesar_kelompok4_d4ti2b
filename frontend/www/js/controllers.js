@@ -369,31 +369,11 @@ angular.module('starter.controllers', [])
           });
 
 
-          //The order was created in pending state,
           
-          // If you are using a payment service integrated with Marketcloud
-          // the Order will be updated automatically.
-          // 
-          // 
-          // Example using stripe
-          // 
-          // 
-          // 
-          // 
-          // 
-          // If you activated the stripe integration in our dashboard, 
-          // you can make a stripe charge using our api (/v0/integrations/stripe/charge)
-          // passing along the order id ,the amount and the stripe token.
-          // 
-          // Our systems will make the call to stripe for you, and if the charge
-          // is successful, we automatically update the order to "paid"
-
-          //
-          // TODO: Add here your call to the payment method
-          // 
 
 
-          // Resetting state
+
+
           $scope.shipping_address = {};
           $scope.billing_address = {};
           $scope.credit_card = {};

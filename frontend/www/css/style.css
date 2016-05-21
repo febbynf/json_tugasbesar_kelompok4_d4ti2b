@@ -13,6 +13,32 @@
   position: relative;
   margin-bottom: 22px;
 }
+
+
+body {
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+
+
+
 .csslider > input {
   display: none;
 }
@@ -63,6 +89,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.img-responsive{
+/*height: auto;
+max-width: 100%;
+*/
+width: 80%;
+height: auto;
+}
+
 .csslider > ul > li {
   position: relative;
   display: inline-block;
